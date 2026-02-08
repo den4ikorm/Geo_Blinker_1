@@ -7,7 +7,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="GeoBlinker"
-        android:theme="@android:style/Theme.Material.NoActionBar">
+        android:theme="@style/Theme.Material3.Dark.NoActionBar">
         <activity
             android:name=".android.MainActivity"
             android:exported="true">
