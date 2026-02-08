@@ -14,12 +14,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # МАГИЯ: Устанавливаем Gradle 8.0 напрямую в облако
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: 8.0
+          gradle-version: '8.0' # Добавили .0 для точности
 
-      # Запускаем через глобальный gradle, а не через ./gradlew
       - name: Build APK
         run: gradle assembleDebug --stacktrace
